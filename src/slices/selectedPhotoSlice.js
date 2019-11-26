@@ -1,15 +1,14 @@
-import { createSlice } from '@reduxjs/toolkit';
+import {createSlice} from '@reduxjs/toolkit';
 
 const selectedPhotoSlice = createSlice({
-    name: 'selectedPhoto',
-    initialState: {},
-    reducers: {
-        setSelectedPhoto: (state, action) => {
-            console.log(action.payload)
-            return action.payload;
-        }
-    }
-})
+  name: 'selectedPhoto',
+  initialState: {},
+  reducers: {
+    setSelectedPhoto: (state, action) => {
+      return action.payload;
+    },
+  },
+});
 
 export default selectedPhotoSlice.reducer;
-export const { setSelectedPhoto } = selectedPhotoSlice.actions;
+export const {setSelectedPhoto} = selectedPhotoSlice.actions;

@@ -9,14 +9,12 @@ const photosSlice = createSlice({
     },
     reducers: {
         fetchPhotosRequest: (state, action) => {
-            console.log('REQUEST')
             return {
                 ...state,
                 isFetching: true,
             };
         },
         fetchPhotosSuccess: (state, action) => {
-            console.log('SUCCESS' ,action.payload)
             return {
                 error: null,
                 isFetching: false,
@@ -24,7 +22,6 @@ const photosSlice = createSlice({
             };
         },
         fetchPhotosFailure: (state, action) => {
-            console.log('Error loading photos.', action.payload);
             return {
                 error: action.payload,
                 isFetching: false,

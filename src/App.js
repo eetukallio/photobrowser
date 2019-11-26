@@ -7,21 +7,19 @@
  */
 
 import React from 'react';
-import { Provider } from 'react-redux';
-import {
-  SafeAreaView,
-  StatusBar,
-} from 'react-native';
+import {Provider} from 'react-redux';
 import NavigationService from './navigation/NavigationService';
 import store from './store';
-import Navigator, {setTopLevelNavigator} from './navigation/Navigator';
+import Navigator from './navigation/Navigator';
 
 const App = () => {
   return (
     <Provider store={store}>
-      <Navigator ref={navigatorRef => {
-        NavigationService.setTopLevelNavigator(navigatorRef);
-      }} />
+      <Navigator
+        ref={navigatorRef => {
+          NavigationService.setTopLevelNavigator(navigatorRef);
+        }}
+      />
     </Provider>
   );
 };
