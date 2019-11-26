@@ -1,5 +1,5 @@
 # photobrowser
-[rn-image]
+
 App for browsing epic placeholder photos
 
 ## Setting up development environment
