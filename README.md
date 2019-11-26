@@ -4,7 +4,7 @@ App for browsing epic placeholder photos
 
 ## Setting up development environment
 
-Make sure you have set up React Native Cli development environment according to [instructions(rn-docs)].
+Make sure you have set up React Native Cli development environment according to [instructions](rn-docs).
 
 Clone this project to your local machine using `git clone`.
 
