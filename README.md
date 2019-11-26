@@ -12,5 +12,5 @@ Clone this project to your local machine using `git clone`.
 
 `react-native run-android` or `react-native run-ios` (Requires a Mac)
 
-[rn-image]: https://img.shields.io/badge/React-Native-0.62-blue
+[rn-image]: https://img.shields.io/badge/React-Native--0.62-blue
 [rn-docs]: https://facebook.github.io/react-native/docs/getting-started
