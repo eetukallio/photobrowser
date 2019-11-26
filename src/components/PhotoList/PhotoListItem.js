@@ -1,13 +1,6 @@
 import React from 'react';
 import {useDispatch} from 'react-redux';
-import {
-  View,
-  Text,
-  Image,
-  StyleSheet,
-  TouchableOpacity,
-  Dimensions,
-} from 'react-native';
+import {Image, StyleSheet, TouchableOpacity, Dimensions} from 'react-native';
 import NavigationService from '../../navigation/NavigationService';
 import {setSelectedPhoto} from '../../slices/selectedPhotoSlice';
 
