@@ -19,7 +19,11 @@ const DetailsScreen = props => {
 
   return (
     <View style={styles.container}>
-      {loading && <ActivityIndicator />}
+      {loading && (
+        <View style={styles.imagePlaceholder}>
+          <ActivityIndicator />
+        </View>
+      )}
       <Image
         style={styles.image}
         source={{uri: photo.url}}
@@ -42,6 +46,12 @@ const styles = StyleSheet.create({
   text: {
     color: 'white',
     margin: 5,
+  },
+  imagePlaceholder: {
+    height: imageHeight,
+    width: imageWidth,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
 
